@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Пригон авто из США</title>
+<style>
+  body {
+    margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a202c, #2d3748);
+    color: #fff;
+  }
+  header {
+    text-align: center; padding: 40px 20px;
+  }
+  header h1 {
+    font-size: 3em; margin-bottom: 0.2em;
+  }
+  header p {
+    font-size: 1.2em; color: #a0aec0;
+    max-width: 600px; margin: 0 auto;
+  }
+  .features {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px;
+  }
+  .feature {
+    background: #2d3748; border-radius: 15px;
+    flex: 1 1 250px; max-width: 300px;
+    padding: 20px; box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  .feature h3 {
+    margin-top: 10px; margin-bottom: 10px;
+    font-size: 1.3em;
+  }
+  .feature p {
+    color: #cbd5e0;
+  }
+  form {
+    max-width: 400px; margin: 40px auto;
+    background: #1a202c; padding: 30px; border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+  }
+  form h2 {
+    margin-bottom: 20px; font-size: 2em; text-align: center;
+  }
+  form label {
+    display: block; margin-bottom: 5px; font-weight: bold;
+  }
+  form input {
+    width: 100%; padding: 10px; margin-bottom: 15px;
+    border: none; border-radius: 10px;
+    font-size: 1em;
+  }
+  form button {
+    width: 100%; padding: 12px;
+    background: #48bb78;
+    border: none; border-radius: 10px;
+    font-size: 1.2em;
+    color: white; cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  form button:hover {
+    background: #38a169;
+  }
+  footer {
+    text-align: center; padding: 20px; font-size: 0.9em;
+    color: #718096;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Пригон авто из США</h1>
+  <p>Привозим автомобили из США под ключ — быстро, безопасно и с гарантией. Сэкономь до 40% от цены на рынке!</p>
+</header>
+
+<section class="features">
+  <div class="feature">
+    <strong>Полный цикл услуг</strong>
+    <p>От подбора и аукциона до доставки, растаможки и сертификации.</p>
+  </div>
+  <div class="feature">
+    <strong>Прозрачность</strong>
+    <p>Предоставим отчеты по авто, фотографии, аукционную документацию.</p>
+  </div>
+  <div class="feature">
+    <strong>Поддержка 24/7</strong>
+    <p>Всегда на связи — в мессенджерах, по телефону и почте.</p>
+  </div>
+</section>
+
+<section>
+  <form id="requestForm">
+    <h2>Оставьте заявку</h2>
+    <label for="name">Ваше имя</label>
+    <input type="text" id="name" name="name" required placeholder="Введите имя" />
+    <label for="phone">Телефон</label>
+    <input type="tel" id="phone" name="phone" required placeholder="+380 ..." />
+    <label for="email">Email (необязательно)</label>
+    <input type="email" id="email" name="email" placeholder="example@mail.com" />
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Пригон авто из США. Все права защищены.</p>
+  <p>Телефон: +380 00 000 00 00 | Email: info@autousa.ua</p>
+</footer>
+
+<script>
+  document.getElementById('requestForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Спасибо за заявку! Мы свяжемся с вами в ближайшее время.');
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
